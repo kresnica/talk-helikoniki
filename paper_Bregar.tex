@@ -1,0 +1,550 @@
+\documentclass{osa-article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{placeins}
+\usepackage[T1]{fontenc}
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\epsperp}{\varepsilon_\perp}
+\newcommand{\epspara}{\varepsilon_\parallel}
+%% Select the journal you're submitting to
+%% oe, boe, ome, osac, osajournal
+\journal{oe}
+% Key:
+% Express journals must have the correct journal selected:
+% {oe} Optics Express
+% {boe} Biomedical Optics Express
+% {ome} Optical Material Express
+% {osac} OSAC Continuum
+% Other OSA journals may use:
+% {osajournal} Applied Optics, Advances in Optics and Photonics, Journal of the Optical Society of America A/B, Optics Letters, Optica, Photonics Research
+
+% Uncomment if submitting to Photonics Research.
+% ONLY APPLICABLE FOR \journal{osajournal}
+% \setprjcopyright
+
+% Set the article type
+\articletype{Research Article}
+% Note that article type is not required for Express journals (OE, BOE, OME and OSAC)
+
+
+\begin{document}
+
+\title{Photonic properties of heliconical liquid crystals}
+
+\author{Anja Bregar,\authormark{1,*} Mitja \v{S}timulak,\authormark{1,2} and Miha Ravnik\authormark{1,3}}
+
+\address{\authormark{1}Department of Physics, University of Ljubljana, Jadranska 19, 1000 Ljubljana, Slovenia\\
+\authormark{2}Gorenje d.d., Partizanska cesta 12, 3320 Velenje, Slovenia\\
+\authormark{3}Jo\v{z}ef Stefan Institute, Jamova 39, 1000 Ljubljana, Slovenia}
+
+\email{\authormark{*}anja.bregar@fmf.uni-lj.si} %% email address is required
+
+% \homepage{http:...} %% author's URL, if desired
+
+%%%%%%%%%%%%%%%%%%% abstract %%%%%%%%%%%%%%%%
+%% [use \begin{abstract*}...\end{abstract*} if exempt from copyright]
+
+\begin{abstract}
+Periodic birefringence is today extensively explored as an interesting route for controlling the flow of light. 
+Distinctly, complex fluids with periodic modulations of birefringence can perform as photonic crystals, with the main examples being cholesteric and blue phases birefringent profiles. 
+Here we demonstrate the characteristics of light propagation in heliconical liquid crystal and demonstrate their tunable optical and photonic properties, specifically as one-dimensional photonic crystals, in the regime of heliconical pitch comparable to the wavelength of light.
+Using a combination of frequency- and time-domain simulations, we show the existence and properties of the photonic band gap, as determined by the relative handedness of the polarization of light and the heliconical structure. 
+We calculate photonic eigenmodes of the light and find the emergence of electric field component along the propagation axis of light, for both left- and right-handed polarization of light, which in turn results in strongly spatially varying Poynting vector that exhibits circular-like and four-leaf-clover-like patterns. 
+As this variation of the Poynting vector is tunable with various material parameters and external (electric) fields, heliconical birefringence photonic crystals show interesting potential for use in tunable photonic applications, such as complex modulation of light beams.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%  body  %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+Soft matter materials are extensively explored as photonic materials capable of efficiently controlling the 
+transmission, reflection and polarization properties, thus governing the flow-of-light \cite{KobashiJ_NaturePhoton10_2016,BregarA_LiquidCrystalsReviews5_2017,mtm-metadevices}. 
+Birefringence based tunability of liquid crystalline materials is of specific interest due to direct tunability of the effective refractive index, 
+including with electric and magnetic fields. 
+Multiple research directions are explored, such as self-assembled \cite{WangN_OptMaterExpress5_2015,KhooIC_ProgressinQuantumElectronics38_2014,GottardoS_PhysRevE74_2006},
+chiral \cite{KobashiJ_SciRep7_2017,BarbozaR_PhysRevLett117_2016,AplincJ_LiqCryst43_2016}
+or planar \cite{KobashiJ_NaturePhoton10_2016,KobashiJ_PhysRevLett116_2016} liquid crystal photonic materials, 
+along with several applications, like improved display technology \cite{HuangY_OptMaterExpress7_2017,TanG_JPhysDApplPhys50_2017,KosaT_Nature485_2012},
+liquid crystal lasers \cite{ColesH_NaturePhoton4_2010}, 
+and liquid crystal photonic fibres \cite{WahleM_OptExpress24_2016,JullienA_OptExpress24_2016}. 
+
+Liquid crystals with periodic modulations of the birefringence can perform as photonic crystals, 
+with the main examples being cholesteric liquid crystal \cite{degennes} and cholesteric blue phases of type I and II \cite{ColesHJ_Nature436_2005,StimulakM_SoftMatter10_2014}.
+Light in liquid crystalline photonic crystals can be Bragg diffracted by the effective planes of periodically varying birefringence,
+which is determined by the periodic spatial variation of the molecular orientation profiles. 
+Specifically, the average molecular orientation in liquid crystals determines the local optical axis with light polarization along the optical axis
+experiencing extraordinary refractive index and in perpendicular direction the ordinary refractive index. 
+In photonic crystals, light can be decomposed into separate modes with specific wavelengths. 
+Modes that interfere destructively with each other can not propagate inside the crystal and they form a photonic band gaps. 
+For frequencies within these gaps, corresponding wave vector takes on imaginary values and light propagating along the crystal is exponentially attenuated.
+In liquid crystalline photonic crystals, the periodicity -- i.e. the lattice constant -- in the variation of the birefringence is at the scale of submicrons and microns, 
+which is exactly the range of application-extensively-relevant optical frequencies \cite{JoannopoulosJD_Nature386_1997}. 
+More generally, photonic crystals are explored for their photonic phenomena like enhancement, attenuation or even suppression of 
+spontaneous emission \cite{NodaS_NaturePhoton1_2007,LeistikowMD_PhysRevLett107_2011}, 
+high-reflecting omnidirectional mirrors \cite{YablonovitchE_PhysRevLett67_1991,RybinM_Crystals5_2015,FukudaJ_OptExpress26_2018}, 
+low loss waveguiding \cite{JoannopoulosJD_Nature386_1997,PhotonicCrystalFibersPropertiesandApplications}, 
+faster then laser on chip communication \cite{8012673} and photonic micro-resonators \cite{MusevicI_LiquidCrystalsReviews4_2016}.
+
+Recently emergent liquid crystalline photonic structures are heliconical liquid crystals, which are characterized by the rotation of the local optical axis 
+around a distinct helical axis at an oblique angle (see Fig. \ref{fig:sketch}a) \cite{MeyerRB_ApplPhysLett12_1968}. 
+They are similar to the established cholesteric liquid crystals, where the optical axis twists to form a helix, 
+but the angle between the helix and the local optical axis is in heliconical liquid crystals not equal to $\pi/2$. 
+The heliconical phase was realized in several experiments: 
+in \cite{BorshchV_NatCommun4_2013} with bent-core molecules, i.e. a pair of rigid monomers connected with a flexible aliphatic molecule, 
+while in \cite{ChenD_PhysRevE89_2014}, dimeric molecules were employed. 
+In both of the experiments, an intermediate twist-bend heliconical phase was observed with a pitch in the range of about $10 \, \mathrm{nm}$. 
+
+A notable change in scales came with experiments in \cite{XiangJ_AdvMater27_2015}, where external voltage was used to stabilize the heliconical phase, 
+and moreover control the size of the heliconical pitch size.
+The pitch was comparable to the wavelengths of visible light, so that the peak of the reflection spectra, 
+connected with the photonic band gaps, lay in a wide range of wavelengths from UV to IR.
+From the material perspective, in order to realize heliconical liquid crystal profiles liquid crystals than energetically prefer bend to twist deformation were used. 
+The ability to control and modulate the heliconical pitch with external electric field indicates interesting routes for multi-color tunable photonic applications \cite{XiangJ_ProcNatlAcadSci113_2016}.
+Another way of controlling the heliconical pitch is by changing the surface anchoring in the thin heliconical liquid crystal cell, 
+which can be of use in sensing applications \cite{IadlovskaOS_OptLett43_2018}. 
+
+In this paper we demonstrate the photonic properties -- including the tunable band gap and optical modes -- of heliconical liquid crystal 
+for light propagating along the helical axis in the regime of heliconical pitch comparable to the wavelength of light. 
+Methodologically, we use frequency- and time-domain numerical simulations that are based on solving full Maxwell's equations 
+and give complementary insight into the characteristics of light. 
+We calculate the transmittivity spectra for an arbitrary heliconical structure and determine the eigenmodes of the electric $\vec{E}$ field 
+(and magnetic field $\vec{H}$) with special emphasis on the existence of the $\vec{E}$-component along the optical axis. 
+Analytic determination of the photonic band gap is also obtained, as dependent on the heliconical tilt angle. 
+The role of commensurability of the wavelength of light and heliconical pitch on the electric and magnetic field modes is demonstrated, 
+showing complex regimes of Poynting vector rotation, including a four leaf clover pattern. 
+The aim of this paper is to give a full and clear theoretical understanding of the light modes and light propagation properties in heliconical birefringent materials, 
+as an interesting route for wide-frequency tunable photonic band-gap materials.  
+
+
+\section{Heliconical material properties and methods}
+
+Heliconical liquid crystals are characterized by their local optical axis -- given as the average molecular orientation called the director -- 
+which is being constant in plane, but rotating about the axis orthogonal to the constant-director-planes \cite{ChenD_ProcNatlAcadSci110_2013}.
+In contrast to helical profiles of cholesterics, the heliconical director is not orthogonal to the axis of rotation, but is tilted with respect to it. 
+The director in heliconical liquid crystals can be described in Cartesian basis as 
+\begin{equation}
+\vec{n}=(\cos \varphi(z)  \sin \theta, \sin \varphi (z) \sin \theta, \cos \theta), \quad \mathrm{where} \quad \varphi(z) = 2 \pi z/ p \quad \mathrm{and} \quad \theta=\mathrm{const.} 
+\label{eq:n}
+\end{equation}
+where angle $\varphi$ describes the twisting along some direction, $p$ is the pitch of the structure and $\theta$ is the constant tilt of the heliconical director. 
+We take that the heliconical axis is along the $e_z$ coordinate axis, with $z$ the corresponding Cartesian coordinate. 
+Angle $\theta$ can be between $0$ and $\pi/2$ depending on the specific material, with $\theta=0$ representing a standard uniform nematic, 
+and $\theta=\pi/2$ a standard twisted cholesteric structure. 
+A sketch of a heliconical director with all the accompanying angles is shown in Fig. \ref{fig:sketch}b. 
+The focus of this paper is the photonic properties of heliconics in the regimes of heliconical pitch comparable to the wavelength of light 
+-- where heliconics can perform as 1D photonic crystals --
+and in the following we give a brief overview how such heliconical profiles can be created, and then the methodology we use to study the flow-of-light.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Figure-1.pdf}
+  \caption{A sketch of the heliconical director structure. 
+  a) Representation of heliconical director profile in the region of one pitch $p$ with $z$-direction as illustrated.
+  b) A sketch of the index ellipsoid at an arbitrary $z$ coordinate. 
+  Inscribed is the coordinate system along with the tilt angle $\theta$ and rotation angle $\varphi$. 
+  The ordinary $n_o$ and extraordinary refractive index $n_e$ are the semi-axes of the ellipsoid. 
+  Depicted are also the circular cross section of the ellipsoid with the plane orthogonal to its optical axis, 
+  and the elliptical cross section of the ellipsoid with the $xy$-plane, which is the incoming plane for the plane wave, used in all the simulations. 
+  The semi-axes of the $xy$-ellipse are the ordinary refractive index $n_o$ and the effective extraordinary refractive index $n_e^{eff}(\theta)$ (see Eq. \ref{eq:n-e-eff}),
+  which determine the optical response of the structure.
+  c) Scheme of refraction between two birefringent layers. 
+  }
+  \label{fig:sketch}
+\end{figure}
+
+\subsection{Free energy approach to heliconics}
+
+We briefly summarize the approach of \cite{MeyerRB_ApplPhysLett12_1968,XiangJ_PhysRevLett112_2014} that explains the stabilization of the heliconical phase 
+through the minimization of the Frank-Oseen free energy for a chiral nematic with imposed cholesteric pitch $p^{\ast}$ and under the influence of external electric field $\vec{E}_{ext}$: 
+\begin{equation}
+  f = \dfrac{1}{2} K_1 (\nabla \cdot \vec{n})^2 + \dfrac{1}{2} K_2 (\vec{n} \cdot ( \nabla \times \vec{n} ) - \dfrac{2 \pi}{p^{\ast}})^2 + \dfrac{1}{2} K_3 \left(\vec{n} \times ( \nabla \times \vec{n}) \right)^2 -\dfrac{1}{2} \epsilon_a \epsilon_0 (\vec{n}\cdot \vec{E}_{ext})^2,
+\end{equation}
+where $K_1$, $K_2$ and $K_3$ are the splay, twist and bend elastic constants, respectively, and $\epsilon_a$ the dielectric anisotropy, which is taken to be positive.
+For small $\vec{E}_{ext}$ and $\kappa = K_3 / K_2 \ll 1$, the equilibrium profile of the director is the helical cholesteric with director perpendicular to the helical axis. 
+However, if increasing the external electric field perpendicularly to the helical axis, at a distinct transition value $E_{N^{\ast}C}$ of approximately 
+
+\begin{equation}
+  E_{N^{\ast}C} \approx \dfrac{2 \pi}{p^{\ast}} \dfrac{K_2}{\sqrt{\epsilon_0 \epsilon_a K_3}} \dfrac{\kappa (2+\sqrt{2(1-\kappa)})}{(1+\kappa)},
+\end{equation}
+the heliconical phase with helical axis parallel to the electric field becomes energetically favorable to the cholesteric phase. 
+The above value is obtained by balancing the energies of the cholesteric and heliconical states with a small $\kappa$ in the external electric field \cite{XiangJ_PhysRevLett112_2014}.
+The pitch $p$ and tilt angle $\theta$ of the heliconical phase can be obtained as: 
+
+\begin{equation}
+  p = \dfrac{2 \pi}{E_{ext}} \sqrt{\dfrac{K_3}{\epsilon_0 \epsilon_a}}, \quad \sin^2 \theta = \dfrac{\kappa}{1-\kappa}\left( \dfrac{E_{NC}}{E_{ext}} -1 \right).
+  \label{eq:pitch-theta}
+\end{equation}
+For even larger electric fields, the nematic phase along the direction of the electric field is favorable. 
+The solution for the transition value $E_{NC}$ between heliconical and nematic phase is 
+
+\begin{equation}
+  E_{NC} = \dfrac{2\pi}{p^{\ast}} \left( \dfrac{K_2}{\sqrt{\epsilon_0 \epsilon_a K_3}} \right).
+\end{equation}
+To generalize, heliconical nematic profiles can form in chiral nematic materials with bend constant $K_3$ smaller than the twist constant $K_2$ (which is not common) 
+with the heliconical pitch increasing and $\theta$ decreasing with increasing electric field. 
+
+As our interest is on basic characteristics of light propagation in heliconical liquid crystals, we will take the nematic profile of the heliconical structure as set 
+and change the pitch and the tilt angle $\theta$ without considering their mutual dependence on $\vec{E}_{ext}$ as in Eq. \ref{eq:pitch-theta}, 
+and also ignore possible mutual (higher intensity) coupling between light and nematic profile. 
+For completeness of results, we will also explore its optical properties by varying $\theta$ continuously from $0$ to $\pi/2$ (from nematic to cholesteric), 
+with no regard for the calculated reorientational jumps at the limiting large and small $\theta$, which experimentally we presume can not be directly achieved, 
+but provides clear insight and contributes to understanding of the light phenomena in heliconical liquid crystals. 
+
+
+\subsection{Computational study of light propagation}
+Light propagation in heliconics is explored with two complementary methods: 
+the first method is the frequency domain method and the second method is the finite-difference time-domain (FDTD), a grid based differential modeling method.
+The frequency domain method is an eigenvalue method that determines the {\it band diagrams} and {\it eigenmodes} of the
+electromagnetic field in general periodic optical medium \cite{book:joa}. Differently, the FDTD method solves the time dependent Maxwell' equation giving insight in light {\it propagation} in general optical media \cite{TafloveA_2000}. 
+
+For the light simulations, we assume periodic modulation of the heliconical director structure
+where one pitch defines a unit cell of such one-dimensional photonic crystal. 
+Unit cell is described by spatially dependent dielectric
+permittivity tensor, which can be expressed with the heliconical director \cite{KlemanM87}: 
+
+\begin{equation}
+    \underline{\underline{\epsilon}}(z)=\epsilon_o \underline{\underline{I}} + \epsilon_a \vec{n}(z) \vec{n}^T(z)
+\label{eq:prve0}
+\end{equation}
+where $\underline{\underline{I}} $ is identity matrix, $\epsilon_o$ and $\epsilon_e$ are the ordinary and extraordinary dielectric constants, respectively, 
+and $\epsilon_a$ is the dielectric anisotropy, equal to $\epsilon_e-\epsilon_o$. 
+Magnetically, the material is isotropic and homogeneous, so the relative magnetic permeability is taken to be equal to $1$ in all calculations.
+
+In the frequency domain method, we search for optical bands and electromagnetic fields in photonic crystal in the simulation box of one unit cell. 
+Following references such as \cite{book:joa,mpb_algo} and assuming typical photonic crystal material properties, for which
+material is typically magnetically isotropic ($\underline{\underline{\mu}}= \underline{\underline{I}}$), leads to
+solving an eigenvalue equation, with the main variable parameter
+$\underline{\underline{\epsilon}}(\mathbf{r})$:
+
+\begin{equation}
+\nabla \times \left\{\underline{\underline{\epsilon}}^{-1} \left(\nabla \times \mathbf{H} \right)
+\right\}=\left(\frac{\omega}{c}\right)^2  \mathbf{H}
+\label{eq:master}
+\end{equation}
+where $c$ is speed of light and $\omega$ is eigenfrequency of specific eigenfield $\mathbf{H}$ in a crystal. Eigenmodes of equation \ref{eq:master} are computed by preconditioned conjugate-gradient minimization, using
+a software package \cite{mpb_algo} with our custom extension for materials with rotating optical axis.
+Basic principle behind the computational method is that in periodic medium one can apply the Bloch - Floquet theorem and
+expands magnetic field $\mathbf{H}$ in the Fourier space, resulting in a decomposition of the electromagnetic fields
+into a basis set of local eigenmodes and eigenfrequencies for specific wave vector $\mathbf{k}$. 
+Represented in a irreducible Brillouin zone, the approach gives
+a photonic band structure diagram $\omega_n(\mathbf{k})$, 
+where $n$ marks the number of the band. In calculation, we used 1000 points to sample the unit cell and 100 equally spaced $k(z)$ vectors in the irreducible Brillouin
+zone. In each simulation first ten eigenvalues (bands) and eigenvectors $\mathbf{H}(z)$ were calculated. 
+
+The simulations of light transmission are performed with our custom written finite-difference time-domain (FDTD) method \cite{TafloveA_2000, TafloveA_2013}. 
+FDTD consists of leapfrog stepping in time for light electric and magnetic field $\vec{E}$ and $\vec{H}$ on a cubic mesh: 
+integrating one of the Maxwell's equations to obtain $\vec{E}$, half a time step later integrating the other Maxwell's equations to obtain $\vec{H}$. 
+The standard Yee grid of the FDTD code was adapted for light propagation through liquid crystals: the $\vec{E}$ and $\vec{H}$ grids are staggered with regards to one another, 
+while each of the $\vec{E}$ and $\vec{H}$ components is calculated in every point of the array, 
+which compromises the memory efficiency of the calculation, but on the other hand enables us to calculate light propagation through a structure with an arbitrary director structure \cite{CanculaM_PhysRevE90_2014}. 
+For all calculations, the liquid crystal anisotropy was taken to be positive and equal to $\Delta \mathrm{n} = 0.3$, with ordinary refractive index being equal to $\mathrm{n_o}=1.5$.
+The incoming light was taken as a plane wave source, entering the cell at the very bottom. 
+The boundary conditions in $x$- and $y$-directions were periodic, 
+while the top and bottom of the calculation cell were enveloped with a boundary layer and a layer of PML \cite{TafloveA_2000} 
+to ensure the outgoing wave would exit the calculation cell without reflection at the upper edge of the cell. 
+The resolution used was $5 \,\mathrm{nm}/\mathrm{vox}$. 
+Only variation of light properties along the heliconical axis was assumed with no variation in the $xy$ direction, 
+which allowed us to use a strongly elongated simulation box of size $10 \, \mathrm{nm} \times 10 \, \mathrm{nm} \times 30 \, \mathrm{\mu m}$.
+
+
+\section{Light fields for propagation along helicoidal axis}
+
+The light propagation in heliconics can be at the qualitative level understood by considering two limiting regimes of heliconics: 
+nematic with uniform director (in our notation this corresponds to the tilt angle $\theta=0$) and cholesteric with helical director ($\theta=\pi/2$).
+In the uniform nematic, the light incoming along the director refracts with the ordinary refractive index regardless of its polarization (i.e. its wavelength changes). 
+In the cholesteric helical regime, however, the light propagation is governed by the ratio between the pitch of the structure $p$ and the wavelength of light in the material. 
+When the two become comparable, the band gap phenomena emerges as a result of light reflecting between the consecutive layers. 
+More specifically, for a range of vacuum wavelengths $\lambda_0$, the circular polarization with the same handedness as the structure 
+is totally reflected, whereas the polarization with the opposite handedness is transmitted undisturbed. 
+And since the director profile of heliconical structure lies somewhere in between these two limiting regimes, qualitatively, 
+the light response of heliconics will be an effective combination of responses of uniform nematic and helical cholesteric. 
+
+\subsection{Refraction between layers of heliconical liquid crystal}
+
+The approach to determine the photonic band gap of heliconics is to consider two thin layers of heliconical liquid crystal (as shown in Fig. \ref{fig:sketch}c).
+The first exemplary case will be the refraction of light with the wavevector incoming normally 
+on the boundary between two consecutive layers of arbitrarily oriented heliconical liquid crystal.
+Since the dielectric displacement $\vec{D}$ is orthogonal to the wavevector, and as we can assume that there is typically no charge between the layers, 
+by using the boundary conditions for Maxwell's equations
+
+\begin{equation}
+(\vec{D}_t-\vec{D}_i) \cdot \vec{n}_{it} = 0,
+\end{equation}
+where $\vec{D}_t$ is the transmitted and $\vec{D}_i$ the incoming dielectric displacement vector and $\vec{n}_{it}$ is the heliconical axis, 
+the direction of dielectric displacement $\vec{D}_t$ does not change compared to $\vec{D}_i$.
+Since the normal component of $\vec{D}_i^n = 0$, $\vec{D}_t^n = 0$ as well: 
+$\vec{D}$ stays in the plane of the boundary, regardless of the initial angles $\varphi$ and $\theta$ of the heliconical structure. 
+However, this is different for the electric field $\vec{E}$, which is in heliconics rotated with respect to $\vec{D}$: 
+
+\begin{equation}
+\vec{E} = \varepsilon_0 \underline{\underline{\varepsilon}}^{-1}(z) \vec{D},
+\end{equation}
+where $\underline{\underline{\varepsilon}}$ is the dielectric tensor of the heliconical liquid crystal. 
+In birefringent materials, the optical indicatrix is used to determine the size and directions of electric field $\vec{E}$, wavevector $\vec{k}$, Poynting vector $\vec{S}$, given the dielectric displacement vector $\vec{D}$. 
+Since the wave vector is incoming normally to the boundary, its direction does not change upon crossing into the heliconical liquid crystal,
+and its size scales with the refractive index: 
+
+\begin{equation}
+\vec{k}_t = \vec{k}_i n^{eff}_t/n^{eff}_i.
+\end{equation}
+
+Effective refractive index $n^{eff}$ for light depends on the polarization of the wave: 
+more accurately, on the elliptical cross section between the index indicatrix and the horizontal ($xy$) plane (see Fig. \ref{fig:sketch}b). 
+For a general angle of $xy$-light polarization $\varphi_0$, the value of the refractive index $n^{eff}$ lies between two bounding values $n_o$ and $n_e$: 
+\begin{equation}
+n_e^{eff} = \dfrac{n_o n_e}{\sqrt{n_o^2 \sin^2 \theta + n_e^2 \cos^2 \theta}},
+\label{eq:n-e-eff}
+\end{equation}
+and also depends on $xy$-angle of the director $\varphi(z)$ and on $\varphi_0$. 
+The periodicity of the effective extraordinary refractive index in heliconics $n_e^{eff}$ is equal to $a=p/2$,
+where $p$ is the heliconical pitch of the structure,
+although the director $\vec{n}(z) \neq \vec{n}(z+a) $ for general heliconical tilt angles $\theta$. 
+This becomes evident by considering the projections of the index ellipsoid on the $x$- and $y$-axes at given $z$: 
+$n_x = n_e^{eff} \cos^2 (2 \pi z/p) + n_o \sin^2 (2 \pi z/p) $ and $n_y = n_e^{eff} \sin^2 (2 \pi z/p ) + n_o \cos^2 ( 2 \pi z/p )$.
+The periodicity of the effective refractive index is equal to $a=p/2$ for both polarizations, 
+from where it follows that any linear combination of $x$- and $y$- polarized light also experiences refractive index to be periodic with the period of $a$.
+The photonic band properties, including band gap, can be determined in an analogous way as in cholesteric helical profiles \cite{ChandrasekharS_1992,KutterS_EurPhysJE12_2003},
+except that the band gap edges are determined by the ordinary index $n_o$ and the effective \emph{extraordinary} index $n_e^{eff}$ 
+(and not $n_o$ and $n_e$ as in standard cholesterics).
+The eigenmodes of the wave on the edges of the band gap are roughly right- and left-circularly polarized waves, 
+with distinct additional electric field component along the propagation axis,
+as explained in more detail later in Sec. \ref{sec:eigenmodes} and Fig. \ref{fig:Ecomponents}. 
+Figure \ref{fig:eff-bg} shows that in heliconical liquid crystal the band gap opens for incoming light of the same handedness as the handedness of the heliconical structure
+for vacuum wavelengths $\lambda_0$ between 
+\begin{align}
+p \, n_o < \lambda_0 < p \, n_e^{eff} \, &, \quad n_o < n_e \\
+p \, n_o > \lambda_0 > p \, n_e^{eff} \, &, \quad n_e < n_o 
+\label{eq:bg}
+\end{align}
+where $p$ is the pitch of the heliconical structure. 
+Note that later we use also wavelength of light within the heliconical medium $\lambda$. 
+In the following text, we will for easier description take the heliconical structure to be right-handed.
+The band gap thus appears for right-circularly polarized (RCP) waves. 
+In right-handed heliconical structure, the left-circularly polarized (LCP) light is transmitted through the structure unperturbed 
+and is refracted with an average refractive index of $n_{LCP}=(n_o+n_e)/2$.
+Note that this similarity in the band diagram of heliconical liquid crystals and helical cholesterics is true only for along-axis light propagation as considered here,
+whereas for any off-axis light propagation one would need to take into account that in heliconics, 
+$\vec{n}$ at $z$ and at $z+p/2$ is tilted in the opposite direction with respect to the $z$-axis.
+
+The above theory arguments are compared with the results of the frequency domain method simulations in Fig. \ref{fig:eff-bg}a and \ref{fig:eff-bg}b. 
+A band gap diagram for an exemplary heliconical profile with angle of $\theta=45^\circ$ is shown in Figure \ref{fig:eff-bg}a. 
+In Fig. \ref{fig:eff-bg}b, the dependence of the band gap width on increasing $\theta$ from $\theta=0$ to $\theta=\pi/2$ is shown. 
+The position of points $1$ and $4$ from Fig. \ref{fig:eff-bg}a is plotted with respect to changing $\theta$. 
+The $y$-axis in both cases is equal to $\omega a / (2 \pi c)$, which also gives us the ratio between the half-period of the structure $a$ and the wavelength inside the structure: 
+$\omega a / (2 \pi c) = a/\lambda$. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Figure-2.pdf}
+  \caption{a) Band-gap diagram for a heliconical structure with heliconical tilt angle $\theta$ of $45^\circ$. 
+  At the edge of the first Brillouin zone, a band gap for RCP light emerges. 
+  The bands are numbered $1-4$ as marked on the figure. 
+  b) Opening of the band gap with increasing $\theta$. 
+  Values for the band-gap frequencies, obtained from simulations (dots, crosses and diamonds), are compared to the theoretical values, corresponding to ordinary refractive index $n_o$ (violet curve)
+  and effective extraordinary index $n_e^{eff}$ (blue curve). 
+  The green curve describes the band gap center and thus the dispersion point of the LCP wave: 
+  it shows the average between the dispersion points of ordinary and extraordinary index. 
+  }
+  \label{fig:eff-bg}
+\end{figure}
+
+Analogously to the cholesterics, from the transmission spectra we can also draw conclusions about the band gap width $\Delta \lambda$ and central band gap wavelength $\lambda_p$, 
+which are equal to $\Delta \lambda = p(n_e^{eff}-n_o)$ and $\lambda_p=\bar{n}p=p(n_e^{eff}+n_o)/2$. 
+Following the above relations, by determining (measuring) the photonic properties of the heliconics, such as the transmission spectra, 
+one can directly determine the structure properties of the heliconic, including the tilt angle $\theta$ and pitch $p$.
+Alternatively, if knowing the structure properties of the heliconics -- i.e. the pitch $p$ and the heliconic tilt angle $\theta$ -- 
+one can determine the photonic properties of the heliconics, such as the band gap width and position. 
+Indeed, this clear relation between heliconical structure parameters and photonic properties is illustrated in Figure \ref{fig:transmittivity}, 
+which shows the averaged transmitted electric field intensity distribution, obtained from FDTD simulations,
+for different vacuum $\lambda_0$ around the band gap, for different pitch values and helicoidal tilt angles.
+In Fig. \ref{fig:transmittivity}a, band gaps for three different tilt angles $\theta$ are shown, 
+where with growing $\theta$, the band gap $\Delta \lambda$ increases, and is largest for $\theta=\pi/2$ (cholesterical structure).
+The lower boundary of the band gap is equal to $p n_o$ and does not change with $\theta$, while the upper boundary, $p n_e^{eff}$, depends on $\theta$. 
+Differently, in Fig. \ref{fig:transmittivity}b, transmittivities for three distinct values of helicoidal pitch $p$ are calculated, 
+showing that the position of the band gap shifts with changing $p$ but the band gap width remains the same. 
+We can conclude that from a transmittivity spectra of a heliconical structure, 
+we can obtain the full information about the heliconical structure and can determine its pitch and tilt angle uniquely. 
+As explained above, in a similar way, from structure properties, photonic properties (i.e. the band gap) can be determined. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Figure-3.pdf}
+  \caption{
+  Transmittivity of heliconical liquid crystals for different heliconical tilt angle and pitch. 
+  a) Intensity transmittivity as function of vacuum wavelength of incoming light $\lambda_0$ for different $\theta$. 
+  Pitch is chosen to be $p=300\, \mathrm{nm}$, which makes the optical periodicity of the heliconical structure equal to $a=p/2=150 \, \mathrm{nm}$.
+  The lower wavelength band gap edge is at $\lambda_0=n_o p $, 
+  and the upper wavelength band gap edge at $\lambda_0=n_e^{eff}(\theta) p$. 
+  b) Intensity transmittance as function of vacuum wavelength for different pitches. 
+  Angle $\theta$ is chosen to be $60^\circ$.
+  }
+  \label{fig:transmittivity}
+\end{figure}
+
+
+\subsection{Eigenmodes of $\vec{E}$ and $\vec{D}$}
+\label{sec:eigenmodes}
+The eigenmodes in heliconical liquid crystals are determined by the helicoidal twisting of the director. 
+As the material is taken to be magnetically isotropic, the main variability of the modes is in the dielectric displacement $\vec{D}$ and electric field $\vec{E}$. 
+For light incoming perpendicularly on a heliconical structure, $\vec{D}$ stays in $xy$-plane and does not change direction, 
+forming left- and right- circular waves on the edges of the band gap and left- and right- elliptical waves above and below the band gap,
+as determined by the ordinary $n_o$ and effective extraordinary $n_e^{eff}$ refractive indices. 
+Explicitly, up to a constant phase, the modes of $\vec{D}$ can be analytically written as 
+$\vec{D}_{RCP}=D_0(\cos (kz-\omega t), - \sin (kz - \omega t), 0)$ and $\vec{D}_{LCP}=D_0(\cos (kz-\omega t), \sin (kz - \omega t), 0)$. 
+The electric field $\vec{E}$ eigenmodes are determined by the tensorial nature of the dielectric permittivity $\underline{\underline{\varepsilon}}$. 
+The $\vec{E}$-eigenmodes, calculated with the frequency domain method, give the profiles shown in Figure \ref{fig:Ecomponents}. 
+A distinct consequence (as for example compared to much more broadly explored helical cholesteric profiles) is the emergence of a non-zero $E_z$ component, 
+i.e. a longitudinal component of electric field along the propagation axis. 
+The $E_z$-component is largest for (RCP) band 1, where the wave is rotating along the axis of $n_e^{eff}$. 
+There is no difference in the band 4 between the heliconical and cholesteric systems, since the wave refracts with the ordinary refractive index, which is the same in both cases.
+The LCP $E_z$ component oscillates with a wavelength of $\lambda/2$. 
+These wavelengths are also explained with Eq. \ref{lcp-lambdaz},\ref{rcp-lambdaz1}, taking $\lambda=p$ at the edge of the band gap. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Figure-4.pdf}
+  \caption{
+Diagram of electric field $\mathbf{E}$ eigenmodes at the edge of irreducible Brillouin zone ($k=\pi/a$) for heliconical $\theta=\pi/4$ (full line) and 
+helical cholesteric $\theta=\pi/2$ (dashed line) structure. 
+a) and d) figures represent RCP light eigenmodes, b) and c) represent LCP light eigenmodes. 
+Band 2 and Band 3 belong to degenerate eigenstates, whereas Band 1 and Band 4 are nondegenerate, as shown in Fig. \ref{fig:eff-bg}. 
+Compared to cholesterics, heliconical structure keeps the same symmetry for $x$ and $y$ components, but an additional longitudinal $E_z$ component emerges. 
+}
+  \label{fig:Ecomponents}
+\end{figure}
+
+For a circularly polarized light of arbitrary wavelength, $E_z$ component varies sinusoidally between the limiting values of $E_z^{max}$ and $-E_z^{max}$. 
+$E_z$ will be the same in size when the $xy$-angle between the $\vec{D}$ and $\vec{n}$ will increase by a multiple of $2 \pi$. 
+Taking $\vec{D}$ to rotate with the angle of $\varphi_0=2\pi z/\lambda$ and $\vec{n}$ with $\varphi= 2\pi z /p $, we can obtain the wavelength of the $E_z$ variation $\lambda_z$. 
+For LCP waves, we get:
+\begin{align}
+&\varphi+\varphi_0=2\pi \\
+&\lambda_z^{LCP} = \dfrac{\lambda p}{p+\lambda}
+\label{lcp-lambdaz}
+\end{align}
+For RCP, however, we have to distinguish the cases with $\lambda < p $ and $\lambda > p$. 
+Similarly, we have
+\begin{align}
+&\varphi_0-\varphi= \pm 2\pi \\
+&\lambda_z^{RCP} = \pm \dfrac{\lambda p}{p-\lambda},
+\label{rcp-lambdaz1}
+\end{align}
+where the positive sign holds for $\lambda < p $ and negative for $\lambda > p$. 
+Notably, this consideration shows that the wavelength of the modulation of the $E_z$ component $\lambda_z^{RCP}$ 
+increases upon approaching the band gap wavelength from below (see also Fig. \ref{fig:Ez}a). 
+Similarly, upon approaching the band gap wavelength from above, the wavelength of the modulation $\lambda_z^{RCP}$ increases as well and has a pole in $\lambda=p$, see Fig. \ref{fig:Ez}b. 
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Figure-5.pdf}
+  \caption{The emergent periodicity of the $E_z$ component around the band gap for RCP wave.
+  a) Modulation of $E_z$ component for different vacuum wavelengths $\lambda_0$ (with their corresponding wavelengths $\lambda$ inside the heliconical medium).
+  The wavelengths $\lambda_0$ are approaching the band gap wavelength, which is for given parameters equal to $\lambda_0=450\,\mathrm{nm}$ or, equally, $\lambda=300\mathrm{nm}$.
+  The $E_z$ modulation wavelength $\lambda_z^{RCP}$ is much larger than the pitch and is increasing when nearing the band gap.
+  When approaching the exact lower band gap edge, $\lambda_z^{RCP}$ becomes infinite, and $E_z$ component is constant. 
+  b) Analysis of the $\lambda_z$ around the band gap. 
+  Values of $\lambda_z^{RCP}$ with respect to $\lambda_0$, obtained from full FDTD simulations for $\theta=30^\circ$ and $\theta=60^\circ$, 
+  and from Eq. \ref{rcp-lambdaz1} are shown, as in full quantitative agreement. 
+  }
+  \label{fig:Ez}
+\end{figure}
+
+
+
+
+\section{Discussion}
+
+
+Light propagation inside the heliconical liquid crystal can be summarized by two effects: 
+the control of the position of the band gap and the control of the direction of propagation given by the Poynting vector. 
+Both of them are dependent on the incoming light wavelength and the pitch and tilt angle of the heliconical structure. 
+Note that experimentally, it is possible to change the fixed angle $\theta$ and pitch $p$ of heliconical structure by applying electrical field $E$ and hence tune band gap of the material. 
+When electrical field $E$ increases, the pitch of the material shortens, and the tilt angle $\theta$ decreases \cite{XiangJ_PhysRevLett112_2014}. 
+Combined with the theory linking the external electric field and the heliconical parameters of $p$ and $\theta$ (e.g. \cite{XiangJ_PhysRevLett112_2014}), 
+the direct influence of the changing external electric field on the reflection properties of the heliconical structure can be estimated. 
+We should comment that the heliconical light modes are obtained in the regime of refractive index anisotropy $\Delta n = | n_e - n_o |$ smaller than of the order of magnitude $1$,
+whereas for large $\Delta n$, the in-plane components of electric field $\vec{E}_x$ and $\vec{E}_y$ can lose the sinusoidal form 
+due to the considerably larger off-diagonal components of the $\underline{\underline{\varepsilon}}^-1(z)$, with more discussion beyond this paper. 
+
+The $\vec{E}$, $\vec{H}$ and $\vec{P}$ vector modulations are given in Figure \ref{fig:Ez-director} for different wavelengths of the incoming light around the band gap,
+notably in comparison with the heliconical pitch. 
+We see the crucial effect of the commensurability of the pitch and the wavelength $\lambda$. 
+If the ratio between pitch and the wavelength is commensurable, then the modulations of the electromagnetic field and of the heliconical structure are periodic
+with the period of the smallest common multiplier between pitch and $\lambda$. 
+If $p/\lambda$ is incommensurable, the modulations of $\vec{E}$ are uncoupled with the structure and non-periodic. 
+The electric $\vec{E}$ field eigenmodes can be summarized by the sinusoidal oscillation of $E_x$ and $E_y$ with the wavelength of $\lambda$ 
+and $E_z$ oscillation with the wavelength of $\lambda_z^{RCP}$ or $\lambda_z^{LCP}$, 
+with $\lambda_z^{RCP}$ and $\lambda_z^{LCP}$ being dependent on $\lambda$ the pitch of the heliconical structure. 
+The exact ratio of $E_x$ and $E_y$ to $E_z$ depends on the specific initial polarization and initial orientation of the dielectric tensor of the heliconical structure. 
+The emergence of non-zero -- and even oscillating -- electric field component along the direction of light propagation
+has direct consequence on the intensity flux of light, i.e. the Poynting vector $\vec{S}$.
+For light incoming normally on the structure, the wavevector $\vec{k}$ does not refract. 
+Since $E_z$ is non-zero, the Poynting vector, given as $\vec{S} = \vec{E} \times \vec{H}$, rotates about the $z$-axis of light propagation, as shown in Fig. \ref{fig:Ez-director}.
+On the band gap edges, for RCP light $E_z$ is constant and so the Poynting vector rotates at a constant angle in a circular helical like pattern (Fig. \ref{fig:Ez-director}d),
+while for LCP, it propagates along $z$ in four-leaf-clover-like pattern, as shown in Fig. \ref{fig:Ez-director}e. 
+
+
+The magnetic fields $\vec{B}$ and $\vec{H}$ oscillate with the the same frequency as the electric field, 
+but, since magnetic permeability is isotropic, have no $z$-component. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.99\textwidth]{Figure-6.pdf}
+  \caption{Representation of the rotation of $\vec{E}$, $\vec{H}$, $\vec{P}$ for four different wavelengths of the incoming light $\lambda_0$.
+  a) One pitch $p$ region of the heliconical director structure. 
+  b) Tilt and rotation of the RCP polarized light for four different wavelengths: 
+  $\lambda=p$, $\lambda=p/2$, $\lambda=2p$ and $\lambda=1.42p$.
+  The direction of the electric field is shown in dark yellow, of magnetic field in dark blue, and of the Poynting vector in red.
+  The rotation of the three vectors depends on $\lambda$ relative to $p$, whereas the tilting with respect to the $z$-axis has a period of $\lambda_z^{RCP}$. 
+  c) The $z$-component of the RCP electric field. 
+  The $E_z$ component is constant for $\lambda=p$ (at the edge of the first Brillouin zone), 
+  and has a periodicity $\lambda_z$ of $p$, $2 p$ and $3.38p$ for $\lambda=p/2$, $2p$, $1.42p$, respectively.
+  d) Visualization of the Poynting vector rotation with respect to z for RCP waves around the band gap wavelengths. 
+  On the band-gap edge ($\lambda_0=445 \mathrm{nm}$, $\lambda=298\mathrm{nm}$), the Poynting vector rotates in an effective circular helical pattern with respect to $z$. 
+  e) For LCP light for $\lambda=300\mathrm{nm}$ ($\lambda_0=482\mathrm{nm}$), the Poynting vector inscribes a four-leaf clover like pattern. 
+  }
+  \label{fig:Ez-director}
+\end{figure}
+
+\section{Conclusion}
+
+In this paper, we determine photonic properties of heliconical liquid crystal using numerical modeling, including the opening of the photonic band gap in heliconical liquid crystals,
+and determination of fundamental light modes.
+We show that the photonic band gap of heliconics can be tuned by changing the heliconical tilt angle $\theta$, 
+from no gap in the effective uniform nematic regime ($\theta=0$) to maximum gap for helical cholesteric regime ($\theta = \pi/2$). 
+In addition to numerical study, we also determine analytically a full relation between the material characteristics -- tilt $\theta$ and pitch $p$ -- 
+and the band gap -- central wavelength and the band gap width.
+The light modes in the heliconical structure are effectively similar to modes in cholesterical helical profiles; 
+however with a notable distinction in the existence of and $E_z$ component -- i.e. along the direction of light propagation. 
+This along-the-light-propagation direction component $E_z$ is shown to oscillate with frequency which depends on the heliconical pitch and the wavelength of incident light. 
+For light with wavelengths at the band gap edge, the eigen-polarization is circular with constant $E_z$ for right circularly polarized waves,
+whereas for left circularly polarized light again the eigen-polarization is circular, but now with the $E_z$ oscillating with half the wavelength.
+The emergence of along-the-light-propagation direction electric field component in turn results in the emergence of strongly spatially varying Poynting vector $\vec{S}$ 
+that deviates from the propagation axis $z$, with the deviation angle changing periodically along $z$ in circular-like and four-leaf-clover-like patterns.
+This spatial variation of the Poynting vector -- as also fully tunable with the material parameters such as heliconical tilt angle -- 
+shows interesting novel ways for complex modulation of the light beams. 
+More generally, this work shows that heliconical birefringent profiles have a distinct novel handle for controlling light fields 
+-- i.e. emergence of electric field polarization component along the direction of light propagation as well as a by-width and positionally tunable band gap -- 
+as compared to more broadly used helical (cholesteric) birefringent profiles which in combination with the demonstrated electric field tunability 
+could open an interesting novel route for controlling the flow of light in photonic applications.  
+
+\section*{Funding}
+Slovenian Research Agency (P1-0099, J1-7300, L1-8135); USAF AFRL EOARD research project Nematic Colloidal Tilings as Tunable Soft Metamaterials (grant no. FA9550-15-1-0418).\\
+
+\section*{Acknowledgments}
+We acknowledge valuable discussion and motivation on this topic from Dr. Timothy White. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%% If using BibTeX:
+\bibliography{bibliography}
+
+
+
+\end{document}
