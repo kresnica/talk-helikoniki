@@ -4,16 +4,13 @@
 \beamer@subsectionintoc {1}{3}{Experimental examples}{3}{0}{1}
 \beamer@subsectionintoc {1}{4}{Contents}{4}{0}{1}
 \beamer@sectionintoc {2}{Band gap shifting}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Analysis of $\mathbf {E}$ and $\mathbf {D}$ fields}{5}{0}{2}
-\beamer@subsectionintoc {2}{2}{Opening of the BG with $\theta $}{6}{0}{2}
-\beamer@subsectionintoc {2}{3}{Transmittivity}{7}{0}{2}
-\beamer@sectionintoc {3}{Eigenmodes of $\mathbf {E}$}{8}{0}{3}
-\beamer@subsectionintoc {3}{1}{Band gap edge modes}{8}{0}{3}
-\beamer@subsectionintoc {3}{2}{Dependence of $E_z$ on $\lambda $}{9}{0}{3}
-\beamer@subsectionintoc {3}{3}{Poynting vector}{10}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{12}{0}{4}
-\beamer@subsectionintoc {4}{1}{Conclusion \& Outlook}{12}{0}{4}
-\beamer@subsectionintoc {4}{1}{Methods}{14}{1}{4}
-\beamer@subsectionintoc {4}{2}{Free energy approach to heliconics}{15}{1}{4}
-\beamer@subsectionintoc {4}{3}{Analytical expressions for $\mathbf {E}$ inside heliconics}{16}{1}{4}
-\beamer@subsectionintoc {4}{4}{Winding of $\mathbf {P}_{xy}$ for different $\lambda /p$}{17}{1}{4}
+\beamer@subsectionintoc {2}{1}{Methods}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Analysis of $\mathbf {E}$ and $\mathbf {D}$ fields}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Opening of the BG with $\theta $}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{Transmittivity}{8}{0}{2}
+\beamer@sectionintoc {3}{Eigenmodes of $\mathbf {E}$}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Band gap edge modes}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Dependence of $E_z$ on $\lambda $}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{Poynting vector}{11}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{13}{0}{4}
+\beamer@subsectionintoc {4}{1}{Conclusion \& Outlook}{13}{0}{4}
