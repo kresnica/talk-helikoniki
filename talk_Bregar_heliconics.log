@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.3)  18 JUL 2018 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.3)  19 JUL 2018 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,21 +1054,38 @@ Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
 Package: multimedia 2012/05/02 ver 0.02
 \mm@movie=\count176
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2016/06/07 v1.8
+
+Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
+\TP@textbox=\box57
+\TP@holdbox=\box58
+\TPHorizModule=\dimen260
+\TPVertModule=\dimen261
+\TP@margin=\dimen262
+\TP@absmargin=\dimen263
+Grid set 16 x 16 = 22.7622pt x 17.07166pt
+\TPboxrulesize=\dimen264
+\TP@ox=\dimen265
+\TP@oy=\dimen266
+\TP@tbargs=\toks57
+\TP@prevdepth=\dimen267
+TextBlockOrigin set to 0pt x 0pt
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box57
+\pgfnodeparttextbox=\box59
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen260
-\pgf@nodesepend=\dimen261
+\pgf@nodesepstart=\dimen268
+\pgf@nodesepend=\dimen269
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -1082,10 +1099,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen262
-\pgffor@skip=\dimen263
-\pgffor@stack=\toks57
-\pgffor@toks=\toks58
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
+\pgffor@stack=\toks58
+\pgffor@toks=\toks59
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -1094,18 +1111,18 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count177
-\pgfplotmarksize=\dimen264
+\pgfplotmarksize=\dimen272
 )
-\tikz@lastx=\dimen265
-\tikz@lasty=\dimen266
-\tikz@lastxsaved=\dimen267
-\tikz@lastysaved=\dimen268
-\tikzleveldistance=\dimen269
-\tikzsiblingdistance=\dimen270
-\tikz@figbox=\box58
-\tikz@figbox@bg=\box59
-\tikz@tempbox=\box60
-\tikz@tempbox@bg=\box61
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikzleveldistance=\dimen277
+\tikzsiblingdistance=\dimen278
+\tikz@figbox=\box60
+\tikz@figbox@bg=\box61
+\tikz@tempbox=\box62
+\tikz@tempbox@bg=\box63
 \tikztreelevel=\count178
 \tikznumberofchildren=\count179
 \tikznumberofcurrentchild=\count180
@@ -1135,20 +1152,20 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 (./talk_Bregar_heliconics.aux)
 \openout1 = `talk_Bregar_heliconics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1187,16 +1204,16 @@ LaTeX Font Info:    ... okay on input line 59.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count186
-\scratchdimen=\dimen271
-\scratchbox=\box62
+\scratchdimen=\dimen279
+\scratchbox=\box64
 \nofMPsegments=\count187
 \nofMParguments=\count188
-\everyMPshowfont=\toks59
+\everyMPshowfont=\toks60
 \MPscratchCnt=\count189
-\MPscratchDim=\dimen272
+\MPscratchDim=\dimen280
 \MPnumerator=\count190
 \makeMPintoPDFobject=\count191
-\everyMPtoPDFconversion=\toks60
+\everyMPtoPDFconversion=\toks61
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1215,8 +1232,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 59.
+\AtBeginShipoutBox=\box65
+Package hyperref Info: Link coloring OFF on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1226,56 +1243,56 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count192
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 
 (./talk_Bregar_heliconics.out) (./talk_Bregar_heliconics.out)
 \@outlinefile=\write6
 \openout6 = `talk_Bregar_heliconics.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 59.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 62.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 59.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 59.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 59.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 59.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 59.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 59.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 62.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 59.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 59.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 59.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 62.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 59.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1301,66 +1318,88 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./talk_Bregar_heliconics.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 61.
+(hyperref)                setting the option has no effect on input line 64.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 121.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 121.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 121.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 121.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 121.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 121.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 121.
+
+
 
 pdfTeX warning: pdflatex (file ./figures/helikoniki-skica2.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/helikoniki-skica2.pdf, id=151, 2258.4375pt x 3199.45313pt>
+<./figures/helikoniki-skica2.pdf, id=135, 2258.4375pt x 3199.45313pt>
 File: ./figures/helikoniki-skica2.pdf Graphic file (type pdf)
 <use ./figures/helikoniki-skica2.pdf>
-Package pdftex.def Info: ./figures/helikoniki-skica2.pdf  used on input line 11
-0.
+Package pdftex.def Info: ./figures/helikoniki-skica2.pdf  used on input line 12
+1.
 (pdftex.def)             Requested size: 63.5115pt x 90.0pt.
 
 
 pdfTeX warning: pdflatex (file ./figures/refraction-ellipsoid.pdf): PDF inclusi
 on: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/refraction-ellipsoid.pdf, id=152, 317.51248pt x 300.90527pt>
+<./figures/refraction-ellipsoid.pdf, id=136, 317.51248pt x 300.90527pt>
 File: ./figures/refraction-ellipsoid.pdf Graphic file (type pdf)
 <use ./figures/refraction-ellipsoid.pdf>
 Package pdftex.def Info: ./figures/refraction-ellipsoid.pdf  used on input line
- 110.
+ 121.
 (pdftex.def)             Requested size: 94.96863pt x 90.0pt.
 
 
 pdfTeX warning: pdflatex (file ./figures/tunable-small-pitch-clark.pdf): PDF in
 clusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/tunable-small-pitch-clark.pdf, id=153, 685.05937pt x 339.30334pt>
+<./figures/tunable-small-pitch-clark.pdf, id=139, 685.05937pt x 339.30334pt>
 File: ./figures/tunable-small-pitch-clark.pdf Graphic file (type pdf)
 <use ./figures/tunable-small-pitch-clark.pdf>
 Package pdftex.def Info: ./figures/tunable-small-pitch-clark.pdf  used on input
- line 110.
-(pdftex.def)             Requested size: 100.94608pt x 50.0pt.
+ line 121.
+(pdftex.def)             Requested size: 121.14156pt x 60.0pt.
 
 
-pdfTeX warning: pdflatex (file ./figures/lavrentovich-advMat-2015.pdf): PDF inc
-lusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/lavrentovich-advMat-2015.pdf, id=154, 984.35007pt x 238.02255pt>
-File: ./figures/lavrentovich-advMat-2015.pdf Graphic file (type pdf)
-<use ./figures/lavrentovich-advMat-2015.pdf>
-Package pdftex.def Info: ./figures/lavrentovich-advMat-2015.pdf  used on input 
-line 110.
-(pdftex.def)             Requested size: 227.44714pt x 55.0pt.
-
-Overfull \vbox (46.04237pt too high) detected at line 110
- []
-
+pdfTeX warning: pdflatex (file ./figures/tunable-laser.pdf): PDF inclusion: fou
+nd PDF version <1.5>, but at most version <1.4> allowed
+<./figures/tunable-laser.pdf, id=140, 489.32813pt x 212.93839pt>
+File: ./figures/tunable-laser.pdf Graphic file (type pdf)
+<use ./figures/tunable-laser.pdf>
+Package pdftex.def Info: ./figures/tunable-laser.pdf  used on input line 121.
+(pdftex.def)             Requested size: 137.87704pt x 60.0pt.
 [2
 
  <./figures/helikoniki-skica2.pdf> <./figures/refraction-ellipsoid.pdf
@@ -1371,194 +1410,240 @@ on: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./figures/tunable-small-pitch-clark.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
-> <./figures/lavrentovich-advMat-2015.pdf
+> <./figures/tunable-laser.pdf
 
-pdfTeX warning: pdflatex (file ./figures/lavrentovich-advMat-2015.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/tunable-laser.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
 >]
 
 pdfTeX warning: pdflatex (file ./figures/electrooptic-response-helicoid.pdf): P
 DF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/electrooptic-response-helicoid.pdf, id=226, 1332.31798pt x 333.0795p
+<./figures/electrooptic-response-helicoid.pdf, id=206, 1332.31798pt x 333.0795p
 t>
 File: ./figures/electrooptic-response-helicoid.pdf Graphic file (type pdf)
 <use ./figures/electrooptic-response-helicoid.pdf>
 Package pdftex.def Info: ./figures/electrooptic-response-helicoid.pdf  used on 
-input line 145.
+input line 164.
 (pdftex.def)             Requested size: 239.98985pt x 60.0pt.
+
+
+pdfTeX warning: pdflatex (file ./figures/lavrentovich-advMat-2015.pdf): PDF inc
+lusion: found PDF version <1.5>, but at most version <1.4> allowed
+<./figures/lavrentovich-advMat-2015.pdf, id=207, 984.35007pt x 238.02255pt>
+File: ./figures/lavrentovich-advMat-2015.pdf Graphic file (type pdf)
+<use ./figures/lavrentovich-advMat-2015.pdf>
+Package pdftex.def Info: ./figures/lavrentovich-advMat-2015.pdf  used on input 
+line 164.
+(pdftex.def)             Requested size: 248.12962pt x 60.0pt.
 [3
 
- <./figures/electrooptic-response-helicoid.pdf>] [4
+ <./figures/electrooptic-response-helicoid.pdf> <./figures/lavrentovich-advMat-
+2015.pdf
 
-] [5
+pdfTeX warning: pdflatex (file ./figures/lavrentovich-advMat-2015.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>] [4
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 169.
+(hyperref)                removing `math shift' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 169.
+(hyperref)                removing `math shift' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 169.
+(hyperref)                removing `math shift' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 169.
+(hyperref)                removing `math shift' on input line 185.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/twoLayer-refraction-sketch.pdf): PDF i
 nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/twoLayer-refraction-sketch.pdf, id=303, 434.33936pt x 705.29654pt>
+<./figures/twoLayer-refraction-sketch.pdf, id=270, 434.33936pt x 705.29654pt>
 File: ./figures/twoLayer-refraction-sketch.pdf Graphic file (type pdf)
 <use ./figures/twoLayer-refraction-sketch.pdf>
 Package pdftex.def Info: ./figures/twoLayer-refraction-sketch.pdf  used on inpu
-t line 187.
+t line 214.
 (pdftex.def)             Requested size: 51.72745pt x 84.0pt.
 File: ./figures/refraction-ellipsoid.pdf Graphic file (type pdf)
 <use ./figures/refraction-ellipsoid.pdf>
 Package pdftex.def Info: ./figures/refraction-ellipsoid.pdf  used on input line
- 187.
+ 214.
 (pdftex.def)             Requested size: 79.14052pt x 75.0pt.
 
-Overfull \hbox (11.53557pt too wide) in paragraph at lines 187--187
- [] 
+Overfull \hbox (11.53557pt too wide) in paragraph at lines 214--214
+ [][] 
  []
 
-[6
+[5
 
  <./figures/twoLayer-refraction-sketch.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 191.
+(hyperref)                removing `math shift' on input line 218.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\theta' on input line 191.
+(hyperref)                removing `\theta' on input line 218.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 191.
+(hyperref)                removing `math shift' on input line 218.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/band-gap-theta.pdf): PDF inclusion: fo
 und PDF version <1.5>, but at most version <1.4> allowed
-<./figures/band-gap-theta.pdf, id=346, 901.25311pt x 322.80678pt>
+<./figures/band-gap-theta.pdf, id=312, 901.25311pt x 322.80678pt>
 File: ./figures/band-gap-theta.pdf Graphic file (type pdf)
 <use ./figures/band-gap-theta.pdf>
-Package pdftex.def Info: ./figures/band-gap-theta.pdf  used on input line 207.
+Package pdftex.def Info: ./figures/band-gap-theta.pdf  used on input line 241.
 (pdftex.def)             Requested size: 307.1096pt x 110.0pt.
-[7
+[6
 
  <./figures/band-gap-theta.pdf>]
+File: ./figures/band-gap-theta.pdf Graphic file (type pdf)
+<use ./figures/band-gap-theta.pdf>
+Package pdftex.def Info: ./figures/band-gap-theta.pdf  used on input line 241.
+(pdftex.def)             Requested size: 307.1096pt x 110.0pt.
+
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 241.
+
+[7
+
+]
 
 pdfTeX warning: pdflatex (file ./figures/transmittivity-heliconics.pdf): PDF in
 clusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/transmittivity-heliconics.pdf, id=855, 522.28322pt x 170.35284pt>
+<./figures/transmittivity-heliconics.pdf, id=838, 522.28322pt x 170.35284pt>
 File: ./figures/transmittivity-heliconics.pdf Graphic file (type pdf)
 <use ./figures/transmittivity-heliconics.pdf>
 Package pdftex.def Info: ./figures/transmittivity-heliconics.pdf  used on input
- line 220.
+ line 254.
 (pdftex.def)             Requested size: 275.92418pt x 90.0pt.
 [8
 
  <./figures/transmittivity-heliconics.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 259.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 259.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/Ebands-near-BG-v2.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/Ebands-near-BG-v2.pdf, id=926, 1401.81383pt x 693.79097pt>
+<./figures/Ebands-near-BG-v2.pdf, id=907, 1401.81383pt x 693.79097pt>
 File: ./figures/Ebands-near-BG-v2.pdf Graphic file (type pdf)
 <use ./figures/Ebands-near-BG-v2.pdf>
-Package pdftex.def Info: ./figures/Ebands-near-BG-v2.pdf  used on input line 23
-8.
+Package pdftex.def Info: ./figures/Ebands-near-BG-v2.pdf  used on input line 27
+2.
 (pdftex.def)             Requested size: 262.66832pt x 130.0pt.
 [9
 
  <./figures/Ebands-near-BG-v2.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 242.
+(hyperref)                removing `subscript' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 242.
+(hyperref)                removing `\lambda' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 276.
 
 
 
 pdfTeX warning: pdflatex (file ./figures/Ez-dependence.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<./figures/Ez-dependence.pdf, id=1308, 622.07933pt x 184.3289pt>
+<./figures/Ez-dependence.pdf, id=1286, 622.07933pt x 184.3289pt>
 File: ./figures/Ez-dependence.pdf Graphic file (type pdf)
 <use ./figures/Ez-dependence.pdf>
-Package pdftex.def Info: ./figures/Ez-dependence.pdf  used on input line 253.
+Package pdftex.def Info: ./figures/Ez-dependence.pdf  used on input line 294.
 (pdftex.def)             Requested size: 320.60698pt x 95.0pt.
 
-Overfull \hbox (13.3156pt too wide) in paragraph at lines 253--253
+Overfull \hbox (13.3156pt too wide) in paragraph at lines 294--294
  [] 
  []
 
 [10
 
  <./figures/Ez-dependence.pdf>]
+File: ./figures/Ez-dependence.pdf Graphic file (type pdf)
+<use ./figures/Ez-dependence.pdf>
+Package pdftex.def Info: ./figures/Ez-dependence.pdf  used on input line 294.
+(pdftex.def)             Requested size: 320.60698pt x 95.0pt.
+
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 294.
+
+
+Overfull \hbox (13.3156pt too wide) in paragraph at lines 294--294
+ [] 
+ []
+
+[11
+
+]
 
 pdfTeX warning: pdflatex (file ./figures/poynting-propagation1.pdf): PDF inclus
 ion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/poynting-propagation1.pdf, id=1346, 1236.11617pt x 579.64651pt>
+<./figures/poynting-propagation1.pdf, id=1342, 1236.11617pt x 579.64651pt>
 File: ./figures/poynting-propagation1.pdf Graphic file (type pdf)
 <use ./figures/poynting-propagation1.pdf>
 Package pdftex.def Info: ./figures/poynting-propagation1.pdf  used on input lin
-e 281.
+e 322.
 (pdftex.def)             Requested size: 298.54124pt x 140.0pt.
 
-Overfull \hbox (21.89778pt too wide) in paragraph at lines 281--281
+Overfull \hbox (21.89778pt too wide) in paragraph at lines 322--322
 [][]  
  []
 
 
-Overfull \hbox (21.89778pt too wide) in paragraph at lines 281--281
+Overfull \hbox (21.89778pt too wide) in paragraph at lines 322--322
 [][][][][][][]  
  []
 
-[11
+[12
 
  <./figures/poynting-propagation1.pdf>]
 File: ./figures/poynting-propagation1.pdf Graphic file (type pdf)
 <use ./figures/poynting-propagation1.pdf>
 Package pdftex.def Info: ./figures/poynting-propagation1.pdf  used on input lin
-e 281.
+e 322.
 (pdftex.def)             Requested size: 298.54124pt x 140.0pt.
 
-Overfull \hbox (21.89778pt too wide) in paragraph at lines 281--281
+Overfull \hbox (21.89778pt too wide) in paragraph at lines 322--322
 [][]  
  []
 
@@ -1566,20 +1651,20 @@ Overfull \hbox (21.89778pt too wide) in paragraph at lines 281--281
 
 pdfTeX warning: pdflatex (file ./figures/poynting-propagation2.pdf): PDF inclus
 ion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/poynting-propagation2.pdf, id=1386, 1250.86475pt x 402.05803pt>
+<./figures/poynting-propagation2.pdf, id=1380, 1250.86475pt x 402.05803pt>
 File: ./figures/poynting-propagation2.pdf Graphic file (type pdf)
 <use ./figures/poynting-propagation2.pdf>
 Package pdftex.def Info: ./figures/poynting-propagation2.pdf  used on input lin
-e 281.
+e 322.
 (pdftex.def)             Requested size: 373.33458pt x 120.0pt.
 
-Overfull \hbox (21.89778pt too wide) in paragraph at lines 281--281
+Overfull \hbox (21.89778pt too wide) in paragraph at lines 322--322
 [][][][][][][][]  
  []
 
-[12
+[13
 
- <./figures/poynting-propagation2.pdf>] [13
+ <./figures/poynting-propagation2.pdf>] [14
 
 ]
 \tf@nav=\write7
@@ -1591,52 +1676,45 @@ Overfull \hbox (21.89778pt too wide) in paragraph at lines 281--281
 \tf@snm=\write9
 \openout9 = `talk_Bregar_heliconics.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
  (./talk_Bregar_heliconics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
+Package rerunfilecheck Info: File `talk_Bregar_heliconics.out' has not changed.
+
+(rerunfilecheck)             Checksum: 13DEF60AAA54E4366E1FA2D4A0E85305;921.
 
 
-Package rerunfilecheck Warning: File `talk_Bregar_heliconics.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
 
-Package rerunfilecheck Info: Checksums for `talk_Bregar_heliconics.out':
-(rerunfilecheck)             Before: F7503A71ED6055DED7FC6118078022A1;1029
-(rerunfilecheck)             After:  7B17F9583A48C1997F7E6597E9ED5F7B;978.
  ) 
 Here is how much of TeX's memory you used:
- 21434 strings out of 494267
- 413009 string characters out of 6162829
- 499890 words of memory out of 5000000
- 24234 multiletter control sequences out of 15000+600000
- 18482 words of font info for 68 fonts, out of 8000000 for 9000
+ 21560 strings out of 494267
+ 415453 string characters out of 6162829
+ 502249 words of memory out of 5000000
+ 24356 multiletter control sequences out of 15000+600000
+ 20401 words of font info for 77 fonts, out of 8000000 for 9000
  395 hyphenation exceptions out of 8191
- 48i,20n,57p,789b,864s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation14} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.2.14} has been referenced but does not e
-xist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on talk_Bregar_heliconics.pdf (13 pages, 17834467 bytes).
+ 48i,20n,57p,789b,866s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on talk_Bregar_heliconics.pdf (14 pages, 18543891 bytes).
 PDF statistics:
- 1504 PDF objects out of 1728 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1494 PDF objects out of 1728 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 

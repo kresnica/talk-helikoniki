@@ -14,6 +14,7 @@
 \usepackage{comment}
 \usepackage{bigints}
 \usepackage{multimedia}
+\usepackage[absolute,overlay]{textpos}
 
 \renewcommand{\thesubfigure}{}
 \setbeamertemplate{navigation symbols}{}
@@ -29,6 +30,8 @@
 \tikzset{mpoint/.style={draw,circle,blue,inner sep=2pt,fill}}
 
 \usetheme{Frankfurt}
+
+\definecolor{mygray}{gray}{0.6}
 
 \newcommand{\odvod}[2]{\frac{\partial #1}{\partial #2}}
 \renewcommand{\vec}{\mathbf}
@@ -69,10 +72,16 @@
  \titlepage
 \end{slide}
 
-
 \begin{slide}{Motivation}
-   \begin{itemize}
-  \item $\vec{n}=(\cos \varphi(z)  \sin \theta, \sin \varphi (z) \sin \theta, \cos \theta), \, \mathrm{where } \,\, \varphi(z) = 2 \pi z/ p \,\, \mathrm{and} \,\, \theta=\mathrm{const.} $
+\vspace{-0.7cm}
+\fontsize{11}{11}
+\begin{columns}[c]
+\hspace{1cm}
+\begin{column}{0.4\textwidth}
+   $\vec{n}={\begin{pmatrix} \cos \varphi(z)  \sin \theta \\ \sin \varphi (z) \sin \theta \\ \cos \theta \end{pmatrix}} $ \\ \vspace{0.1cm} where $ \varphi(z) = 2 \pi z/ p $ \\ \vspace{0.1cm}  and $ \theta=\mathrm{const.}$
+  %\item $\vec{n}=(\cos \varphi(z)  \sin \theta, \sin \varphi (z) \sin \theta, \cos \theta), \, \mathrm{where } \,\, \varphi(z) = 2 \pi z/ p \,\, \mathrm{and} \,\, \theta=\mathrm{const.} $
+\end{column}
+\begin{column}{0.6\textwidth}
    \begin{center}
     \begin{overpic}[height=90pt]{./figures/helikoniki-skica2} 
 %     %\put(10,-10) {\tiny Rybin et al., Nat. Commun. (2015)}
@@ -81,50 +90,60 @@
 %     %\put(10,-10) {\tiny Rybin et al., Nat. Commun. (2015)}
     \end{overpic}
    \end{center}
-    \item Early experiments: X-ray range, pitch $\sim 10 \mathrm{nm}$ (bent-core LC)
-   \begin{center}
-    \begin{overpic}[height=50pt]{./figures/tunable-small-pitch-clark}
-    \put(10,-6) {\tiny FFTEM images, $p\approx 14 \, \mathrm{nm}$. }
-    \put(5,-12) {\tiny Chen et al., PRE 89, 022506 (2014). }
-    %\put(10,-10) {\tiny Chen, Nakata, Shao, Tuchband, Shuai, Baumeister, Weissflog, Walba, Glaser, Maclennan, Clark, PRE 89, 022506 (2014). }
-   \end{overpic}
-   \end{center}
-   \vspace{0.3cm}
-   \item Optical range: LC of rod-like units linked by a flexible chain
-    \begin{center}
-    \begin{overpic}[height=55pt]{./figures/lavrentovich-advMat-2015}
-    %\put(10,-2) {\tiny J. Xiang, Y. Li, Q. Li, D. A. Paterson, J. M. D. Storey, C. T. Imrie and O. D. Lavrentovich, Adv. Mater. 27, 3014 (2015). }
-    \end{overpic}
-    
-    \vspace{-0.1cm}
-    {\tiny Xiang et al., Adv. Mater. 27, 3014 (2015). }
-    \end{center}
+\end{column}
+\end{columns}
+
+   \begin{itemize}
+    \item \noindent Two groups: 1.: pitch $p \sim 10\, \mathrm{nm}$ (bent-core LC), \\ 2.: pitch in optical range (rod-like \& linked by flexible chain)
     \end{itemize}
+    \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+    \begin{center}
+      \begin{overpic}[height=60pt]{./figures/tunable-small-pitch-clark}
+       \put(10,-6) {\tiny FFTEM images, $p\approx 14 \, \mathrm{nm}$. }
+       \put(5,-12) {\tiny Chen et al., PRE 89, 022506 (2014). }
+      \end{overpic}
+    \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    \begin{center}
+      \begin{overpic}[height=60pt]{./figures/tunable-laser}
+      \put(-3,-6){\tiny Xiang et al., Proc. Natl. Acad. Sci. 113, 12925 (2016).}
+      \end{overpic}
+    \end{center}
+    \end{column}
+    \end{columns}
 % %     \begin{exampleblock}{}
 % %     $\lambda \approx a$: diffraction\\
 % %     $\lambda \approx 3a$: photonic crystal\\
 % %     $\lambda \approx 10a$: metamaterial
 % %    \end{exampleblock}
-   \vspace{-0.5cm}
-
 \end{slide}
 
 
 \begin{slide}{Experimental examples}
-   \vspace{-0.3cm}
+   \vspace{-0.5cm}
    \fontsize{10}{10}
    \begin{itemize}
    \item Arises for LC with $K_3 \ll K_2$ for a range of $\vec{E}_{ext}$
    \begin{center}
      \begin{overpic}[height=60pt]{./figures/electrooptic-response-helicoid}
     %\put(12,-3) {\tiny Xiang, Shiyanovskii, Imrie, Lavrentovich, PRL 112, 217801 (2014). }
-      \put(12,-3) {\tiny Xiang et al., PRL 112, 217801 (2014). }
+      \put(30,-3) {\tiny Xiang et al., PRL 112, 217801 (2014). }
      \end{overpic}
   \end{center}    
+  \vspace{0.3cm}
     \item Possibility of shifting $p$ and $\theta$ with external electric field $\vec{E_{ext}}$
-    \item Theoretical dependence of $p$ and $\theta$ vs. $\vec{E_{ext}}$
-    \vspace{-0.1cm}
-    {\tiny J. Xiang, S. V. Shiyanovskii, C. Imrie and O. D. Lavrentovich, Phys. Rev. Lett. 112, 217801 (2014). }
+      \begin{center}
+      \begin{overpic}[height=60pt]{./figures/lavrentovich-advMat-2015}
+      %\put(10,-2) {\tiny J. Xiang, Y. Li, Q. Li, D. A. Paterson, J. M. D. Storey, C. T. Imrie and O. D. Lavrentovich, Adv. Mater. 27, 3014 (2015). }
+      \end{overpic}
+      \put(-180,-6){\tiny Xiang et al., Adv. Mater. 27, 3014 (2015). }
+      \end{center}
+    \item Theoretical dependence of $p$ and $\theta$ vs. $\vec{E_{ext}}$: 
+    \vspace{0.1cm}
+    
+    \tiny{J. Xiang, S. V. Shiyanovskii, C. Imrie and O. D. Lavrentovich, Phys. Rev. Lett. 112, 217801 (2014). }
 %     \begin{overpic}[height=55pt]{./figures/electric-field-dependence-theoretical}
 %     \put(10,-2) {\tiny J. Xiang, S. V. Shiyanovskii, C. Imrie and O. D. Lavrentovich, Phys. Rev. Lett. 112, 217801 (2014). }
 %    \end{overpic}
@@ -148,38 +167,46 @@
 
 \begin{slide}{Contents}
  \begin{itemize}
-  \item Shifting of heliconical band gap with changing material properties
-  \item Electric $\vec{E}$ and magnetic $\vec{H}$ fields inside heliconics -- eigenmodes
+  \item Determining the position and width of heliconical band gap with changing material properties ($\theta$, $p$)
+  \item Description of electric $\vec{E}$ and magnetic $\vec{H}$ fields inside heliconics: $\vec{E}$, $\vec{H}$-eigenmodes
   \item Winding of the Poynting vector $\vec{P}$ 
-  \item Outlook
+  \vspace{0.8cm}
+  \item Numerical methods used: 
+    \begin{itemize}
+      \item[--] Frequency domain method: eigenvalue method for determining the band diagrams and eigenmodes
+      \item[--] FDTD: Finite-difference time-domain method: solving time-dependent Maxwell's equation, gives info about light propagation
+    \end{itemize}  
   \end{itemize}
 \end{slide}
-
 
 
 \section{Band gap shifting}
-
-\begin{slide}{Methods}
-  \begin{itemize}
-    \item FDTD
-    \item MPB
-  \end{itemize}
-\end{slide}
 
 \begin{slide}{Analysis of $\vec{E}$ and $\vec{D}$ fields}
 \begin{columns}[c]
   \begin{column}{.78\textwidth}
     \begin{itemize}
-      \item On-axis propagation: $\vec{D} \perp \vec{k}$ $\rightarrow$ $\vec{D}$ stays in plane of boundary 
-      \item Since $D_z=0$ for heliconics, we can follow the derivation of the band-gap for cholesterics
-      \item Light of same handedness as structure: has band gap, opposite handednesses: no band gap
-    \item Effective periodicity: $p/2$
+    \item On-axis propagation
+    \item $\vec{D}$-field:
+      \begin{itemize}
+        \item[--] $\vec{D} \perp \vec{k}$ $\rightarrow$ $\vec{D}$ stays in plane of boundary 
+        \item[--] Since $D_z=0$ for heliconics, we can follow the derivation of the band-gap for cholesterics
+        \item[--] Light of same handedness as structure: has band gap, opposite handednesses: no band gap
+        \item[--] Effective periodicity: $p/2$ with $n_o$ and $n_e^{eff}$
+      \end{itemize}
+    \item $\vec{E}$-field:
+      \begin{itemize}
+        \item[--] $\vec{E} \nparallel \vec{D}$ since $\vec{D} = \varepsilon_0 \underline{\underline{\varepsilon}} \vec{E}$
+        \item[--] Effective periodicity: $p$ 
+      \end{itemize}
     \end{itemize}
   \end{column}
   \begin{column}{.22\textwidth}
     \centering
     \begin{overpic}[height=84pt]{./figures/twoLayer-refraction-sketch}
     \end{overpic}
+    
+    \vspace{0.5cm}
     \begin{overpic}[height=75pt]{./figures/refraction-ellipsoid}
     \end{overpic}   
   \end{column}
@@ -204,6 +231,13 @@
   \centering
   \begin{overpic}[height=110pt]{./figures/band-gap-theta}
   \end{overpic}  
+  \only<2>{\begin{textblock*}{100pt}(170pt,200pt)
+  \centering
+  \textblockcolour{mygray}
+  \vspace{10pt}
+    We have quantified the band-gap position and width
+    \vspace{10pt}
+  \end{textblock*}}
 \end{slide}
 
 
@@ -250,6 +284,13 @@
 \centering
   \begin{overpic}[height=95pt]{./figures/Ez-dependence}
   \end{overpic}
+    \only<2>{\begin{textblock*}{100pt}(170pt,200pt)
+  \centering
+  \textblockcolour{mygray}
+  \vspace{10pt}
+    We have determined the $\vec{E}$-eigenmodes inside the material
+    \vspace{10pt}
+  \end{textblock*}}
 \end{slide}
 
 
@@ -295,9 +336,9 @@
 \section{Conclusion}
 
 \begin{slide}{Conclusion \& Outlook}
-We determined the photonic properties of heliconical liquid crystals: 
+We have determined the photonic properties of heliconical liquid crystals: 
 \begin{itemize}
-  \item The opening of the photonic band gap
+  \item Quantifying of the photonic band gap opening with $p$, $\theta$
   \item Analysis of $\vec{E}$ eigenmodes, the introduction of $E_z$ component
 \end{itemize}
 \end{slide}
