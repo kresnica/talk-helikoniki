@@ -61,8 +61,9 @@
 
 \begin{document}
 \title[ILCC 2018]{Optical properties of heliconical liquid crystals}
-\author[Anja Bregar]{\begin{tabular}{rl} \underline{Anja Bregar}, Mitja Štimulak and Miha Ravnik \end{tabular}}
-\institute[FMF]{Faculty of Mathematics and Physics, University of Ljubljana}
+\author[Anja Bregar]{\begin{tabular}{rl} \underline{Anja Bregar}$^1$, Mitja Štimulak$^1$ and Miha Ravnik$^{1,2}$ \end{tabular}}
+\institute[FMF]{$^1$ Faculty of Mathematics and Physics, University of Ljubljana \\ $^2$ Jožef Stefan Institute, Ljubljana}
+%\institute[JSI]{$^2$ Jožef Stefan Institute, Ljubljana}
 
 \date{\today}
 
@@ -73,10 +74,14 @@
 \end{slide}
 
 \begin{slide}{Motivation}
-\vspace{-0.7cm}
+\vspace{-0.4cm}
 \fontsize{11}{11}
+\begin{itemize}
+ \item Heliconical liquid crystals provide interesting novel possibilities for optics and photonics
+\end{itemize}
+\vspace{-0.4cm}
 \begin{columns}[c]
-\hspace{1cm}
+%\hspace{1cm}
 \begin{column}{0.4\textwidth}
    $\vec{n}={\begin{pmatrix} \cos \varphi(z)  \sin \theta \\ \sin \varphi (z) \sin \theta \\ \cos \theta \end{pmatrix}} $ \\ \vspace{0.1cm} where $ \varphi(z) = 2 \pi z/ p $ \\ \vspace{0.1cm}  and $ \theta=\mathrm{const.}$
   %\item $\vec{n}=(\cos \varphi(z)  \sin \theta, \sin \varphi (z) \sin \theta, \cos \theta), \, \mathrm{where } \,\, \varphi(z) = 2 \pi z/ p \,\, \mathrm{and} \,\, \theta=\mathrm{const.} $
@@ -92,10 +97,11 @@
    \end{center}
 \end{column}
 \end{columns}
-
+\vspace{-0.4cm}
    \begin{itemize}
-    \item \noindent Two groups: 1.: pitch $p \sim 10\, \mathrm{nm}$ (bent-core LC), \\ 2.: pitch in optical range (rod-like \& linked by flexible chain)
+    \item \noindent Two main types of systems: 1.: pitch $p \sim 10\, \mathrm{nm}$ (bent-core LC), 2.: $p$ in optical range (rod-like \& linked by flexible chain)
     \end{itemize}
+    \vspace{-0.4cm}
     \begin{columns}[c]
     \begin{column}{0.5\textwidth}
     \begin{center}
@@ -121,11 +127,12 @@
 \end{slide}
 
 
-\begin{slide}{Experimental examples}
+\begin{slide}{Properties of heliconics with pitch in optical range}
    \vspace{-0.5cm}
    \fontsize{10}{10}
    \begin{itemize}
-   \item Arises for LC with $K_3 \ll K_2$ for a range of $\vec{E}_{ext}$
+   %\item Arises for LC with $K_3 \ll K_2$ for a range of $\vec{E}_{ext}$
+   \item Large elastic anisotropy: $K_3 \ll K_2$
    \begin{center}
      \begin{overpic}[height=60pt]{./figures/electrooptic-response-helicoid}
     %\put(12,-3) {\tiny Xiang, Shiyanovskii, Imrie, Lavrentovich, PRL 112, 217801 (2014). }
@@ -133,17 +140,17 @@
      \end{overpic}
   \end{center}    
   \vspace{0.3cm}
-    \item Possibility of shifting $p$ and $\theta$ with external electric field $\vec{E_{ext}}$
+    \item Band gap tunability with external electric field $\vec{E_{ext}}$
       \begin{center}
       \begin{overpic}[height=60pt]{./figures/lavrentovich-advMat-2015}
       %\put(10,-2) {\tiny J. Xiang, Y. Li, Q. Li, D. A. Paterson, J. M. D. Storey, C. T. Imrie and O. D. Lavrentovich, Adv. Mater. 27, 3014 (2015). }
       \end{overpic}
       \put(-180,-6){\tiny Xiang et al., Adv. Mater. 27, 3014 (2015). }
       \end{center}
-    \item Theoretical dependence of $p$ and $\theta$ vs. $\vec{E_{ext}}$: 
-    \vspace{0.1cm}
-    
-    \tiny{J. Xiang, S. V. Shiyanovskii, C. Imrie and O. D. Lavrentovich, Phys. Rev. Lett. 112, 217801 (2014). }
+%     \item Theoretical dependence of $p$ and $\theta$ vs. $\vec{E_{ext}}$: 
+%     \vspace{0.1cm}
+%     
+%     \tiny{J. Xiang, S. V. Shiyanovskii, C. Imrie and O. D. Lavrentovich, Phys. Rev. Lett. 112, 217801 (2014). }
 %     \begin{overpic}[height=55pt]{./figures/electric-field-dependence-theoretical}
 %     \put(10,-2) {\tiny J. Xiang, S. V. Shiyanovskii, C. Imrie and O. D. Lavrentovich, Phys. Rev. Lett. 112, 217801 (2014). }
 %    \end{overpic}
@@ -167,25 +174,49 @@
 
 \begin{slide}{Contents}
  \begin{itemize}
-  \item Determining the position and width of heliconical band gap with changing material properties ($\theta$, $p$)
-  \item Description of electric $\vec{E}$ and magnetic $\vec{H}$ fields inside heliconics: $\vec{E}$, $\vec{H}$-eigenmodes
-  \item Winding of the Poynting vector $\vec{P}$ 
-  \vspace{0.8cm}
-  \item Numerical methods used: 
+  \item Heliconical band gap as dependent on changing material properties ($\theta$, $p$)
+  \item Electric $\vec{E}$ and magnetic $\vec{H}$ eigenmodes inside heliconics
+  \item Poynting vector $\vec{P}$ profiles
+ \end{itemize}
+ \vspace{1cm}
+A. Bregar, M. Štimulak and M. Ravnik, \emph{Photonic properties of heliconical liquid crystals}, submitted to Optics Express. 
+ \end{slide}
+
+\begin{slide}{Numerical methods}
+\vspace{-1cm}
     \begin{itemize}
-      \item[--] Frequency domain method: eigenvalue method for determining the band diagrams and eigenmodes
-      \item[--] FDTD: Finite-difference time-domain method: solving time-dependent Maxwell's equation, gives info about light propagation
+      \item Frequency domain method 
+      \begin{itemize}
+        \item[--] Eigenvalue method for determining the band diagrams and eigenmodes
+        \item[--] Solving in Fourier space for a specific wave vector $\vec{k}$: 
+$\nabla \times \left\{\underline{\underline{\epsilon}}^{-1} \left(\nabla \times \mathbf{H} \right)
+\right\}=\left(\frac{\omega}{c}\right)^2  \mathbf{H}$
+        \item[--] Eigenvectors \ldots $\vec{H}$-eigenmodes, \\ eigenvalues \ldots eigenfrequencies $\omega_n(\vec{k})$
+     \end{itemize}
+
+      \item FDTD (Finite-difference time-domain method): 
+      \begin{itemize}
+      \item[--] Solving time-dependent Maxwell's equation, gives info about light propagation
+      \item[--] Leapfrog stepping in time for light $\vec{E}$ and $\vec{H}$ fields on a staggered cubic  Yee mesh
+      \end{itemize}
     \end{itemize}  
-  \end{itemize}
 \end{slide}
 
 
-\section{Band gap shifting}
+
+\section{Helionical band gap}
 
 \begin{slide}{Analysis of $\vec{E}$ and $\vec{D}$ fields}
-\begin{columns}[c]
-  \begin{column}{.78\textwidth}
-    \begin{itemize}
+\fontsize{10}{10}  
+  \begin{center}  
+    \begin{overpic}[height=75pt]{./figures/helikoniki-skica3}
+    \end{overpic}   
+    \begin{overpic}[height=75pt]{./figures/twoLayer-refraction-sketch}
+    \end{overpic}
+    \begin{overpic}[height=75pt]{./figures/refraction-ellipsoid}
+    \end{overpic}   
+  \end{center}
+\begin{itemize}
     \item On-axis propagation
     \item $\vec{D}$-field:
       \begin{itemize}
@@ -197,20 +228,9 @@
     \item $\vec{E}$-field:
       \begin{itemize}
         \item[--] $\vec{E} \nparallel \vec{D}$ since $\vec{D} = \varepsilon_0 \underline{\underline{\varepsilon}} \vec{E}$
-        \item[--] Effective periodicity: $p$ 
+        %\item[--] Effective periodicity: $p$ 
       \end{itemize}
     \end{itemize}
-  \end{column}
-  \begin{column}{.22\textwidth}
-    \centering
-    \begin{overpic}[height=84pt]{./figures/twoLayer-refraction-sketch}
-    \end{overpic}
-    
-    \vspace{0.5cm}
-    \begin{overpic}[height=75pt]{./figures/refraction-ellipsoid}
-    \end{overpic}   
-  \end{column}
-\end{columns}
 \end{slide}
 
 
@@ -219,6 +239,7 @@
   \vspace{-0.5cm}
   \fontsize{10}{10}
   \begin{itemize}
+    \item We have quantified the band-gap position and width
     \item BG boundaries depend on $n_o$ and effective extraordinary refractive index $n_e^{eff}=\dfrac{n_o*n_e}{\sqrt{n_o^2 \sin^2 \theta + n_e^2 \cos^2 \theta}}$
     \item BG for vacuum wavelengths between 
     \vspace {-0.3cm}
@@ -231,13 +252,13 @@
   \centering
   \begin{overpic}[height=110pt]{./figures/band-gap-theta}
   \end{overpic}  
-  \only<2>{\begin{textblock*}{100pt}(170pt,200pt)
-  \centering
-  \textblockcolour{mygray}
-  \vspace{10pt}
-    We have quantified the band-gap position and width
-    \vspace{10pt}
-  \end{textblock*}}
+%   \only<2>{\begin{textblock*}{100pt}(170pt,200pt)
+%   \centering
+%   \textblockcolour{mygray}
+%   \vspace{10pt}
+%     
+%     \vspace{10pt}
+%   \end{textblock*}}
 \end{slide}
 
 
@@ -246,10 +267,11 @@
 \begin{itemize}
   \item Band gap width depends on $\theta$
   \item Central position of band gap depends on $p$
+  
+  \vspace{0.5cm}
     \begin{overpic}[height=90pt]{./figures/transmittivity-heliconics}
     \end{overpic}
 \item From transmittivity spectra $\rightarrow$ $p$ and $\theta$ determined uniquely
-\item Connection between $E_{ext}$ and $p$ and $\theta$: Xiang et al., PRL 112, 217801 (2014)
 \end{itemize}
 \end{slide}
 
@@ -261,6 +283,7 @@
 \begin{slide}{Band gap edge modes}
 \fontsize{10}{10}
 \begin{itemize}
+    \item We determine band gap edge modes
     \item $\vec{E} \nparallel \vec{D}$ since $\vec{D} = \varepsilon_0 \underline{\underline{\varepsilon}} \vec{E}$
     \item In cholesterics: $E_z = 0$, in heliconics: $E_z \neq 0$
     \item On band gap edge: Eigenmodes right- or left-circularly polarized waves with additional $E_z$-component
@@ -284,13 +307,13 @@
 \centering
   \begin{overpic}[height=95pt]{./figures/Ez-dependence}
   \end{overpic}
-    \only<2>{\begin{textblock*}{100pt}(170pt,200pt)
-  \centering
-  \textblockcolour{mygray}
-  \vspace{10pt}
-    We have determined the $\vec{E}$-eigenmodes inside the material
-    \vspace{10pt}
-  \end{textblock*}}
+%     \only<2>{\begin{textblock*}{100pt}(170pt,200pt)
+%   \centering
+%   \textblockcolour{mygray}
+%   \vspace{10pt}
+%     We have determined the $\vec{E}$-eigenmodes inside the material
+%     \vspace{10pt}
+%   \end{textblock*}}
 \end{slide}
 
 
@@ -335,12 +358,20 @@
 
 \section{Conclusion}
 
-\begin{slide}{Conclusion \& Outlook}
-We have determined the photonic properties of heliconical liquid crystals: 
+\begin{slide}{Conclusion}
+We have explored the photonic properties of heliconical liquid crystals: 
 \begin{itemize}
-  \item Quantifying of the photonic band gap opening with $p$, $\theta$
-  \item Analysis of $\vec{E}$ eigenmodes, the introduction of $E_z$ component
-\end{itemize}
+  \item Quantifying of the photonic band gap opening with $p$, $\theta$: \\
+  the band gap widens with larger $\theta$ and moves to larger wavelengths with increasing the pitch $p$
+  \item Analysis of $\vec{E}$ eigenmodes: \\
+  at the band edge the modes are circular, otherwise elliptic; emergence of non-zero $E_z$ component
+  \item Interesting variability of the Poynting vector: \\
+  cone-like and four-leaf like patterns
+  \end{itemize}
+
+ \vspace{1cm}
+A. Bregar, M. Štimulak and M. Ravnik, \emph{Photonic properties of heliconical liquid crystals}, submitted to Optics Express. 
+
 \end{slide}
 
 
@@ -419,7 +450,7 @@ We have determined the photonic properties of heliconical liquid crystals:
 % 
 %  \begin{block}{Describing metal and dielectrics}
 % \begin{itemize}
-%  \item Dissipative losses included with Lorentz/Drude model: $\eps(\omega)=1+\dfrac{\omega_p^2}{(\omega_0^2-\omega^2)-\mathrm{i}\Gamma\omega}$
+%  \item Dissipative losses included with Lorentz/Drude model: $\eps(\omega)=1+\dfrac{\omega_p^2}c{(\omega_0^2-\omega^2)-\mathrm{i}\Gamma\omega}$
 %  \item $\mu$ presumed constant
 % \end{itemize}
 % \end{block}
